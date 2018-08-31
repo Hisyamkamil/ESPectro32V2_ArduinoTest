@@ -1,0 +1,84 @@
+\hypertarget{classESPectro32__RGBLED__Animation}{\section{E\-S\-Pectro32\-\_\-\-R\-G\-B\-L\-E\-D\-\_\-\-Animation Class Reference}
+\label{classESPectro32__RGBLED__Animation}\index{E\-S\-Pectro32\-\_\-\-R\-G\-B\-L\-E\-D\-\_\-\-Animation@{E\-S\-Pectro32\-\_\-\-R\-G\-B\-L\-E\-D\-\_\-\-Animation}}
+}
+
+
+Base class of Neopixel R\-G\-B L\-E\-D animation. You should provide callback for anim\-Update\-Callback.  
+
+
+
+
+{\ttfamily \#include $<$E\-S\-Pectro32\-\_\-\-R\-G\-B\-L\-E\-D\-\_\-\-Animation.\-h$>$}
+
+Inheritance diagram for E\-S\-Pectro32\-\_\-\-R\-G\-B\-L\-E\-D\-\_\-\-Animation\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classESPectro32__RGBLED__Animation}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classESPectro32__RGBLED__Animation_adb4ace9959ddce9e4c4190bc8032bf77}{{\bfseries E\-S\-Pectro32\-\_\-\-R\-G\-B\-L\-E\-D\-\_\-\-Animation} (\hyperlink{classESPectro32__RGBLED}{E\-S\-Pectro32\-\_\-\-R\-G\-B\-L\-E\-D} \&rgb\-Led, Rgb\-Led\-Color\-\_\-t \&default\-Color)}\label{classESPectro32__RGBLED__Animation_adb4ace9959ddce9e4c4190bc8032bf77}
+
+\item 
+\hypertarget{classESPectro32__RGBLED__Animation_a8558246bd40b33eb7745428bdb5d009a}{void {\bfseries start} ()}\label{classESPectro32__RGBLED__Animation_a8558246bd40b33eb7745428bdb5d009a}
+
+\item 
+\hypertarget{classESPectro32__RGBLED__Animation_aef45fc6cc0054c980befc429fc25c90f}{void {\bfseries start} (W\-S2812\-Animator\-::\-Animation\-Update\-Callback anim\-Update\-Callback, W\-S2812\-Animator\-::\-Animation\-Finished\-Callback anim\-Finished\-Callback, uint16\-\_\-t duration=0, uint16\-\_\-t update\-Interval=0)}\label{classESPectro32__RGBLED__Animation_aef45fc6cc0054c980befc429fc25c90f}
+
+\item 
+\hypertarget{classESPectro32__RGBLED__Animation_a68276cca176858f56686f5a33c69f2d9}{void {\bfseries stop} ()}\label{classESPectro32__RGBLED__Animation_a68276cca176858f56686f5a33c69f2d9}
+
+\item 
+\hypertarget{classESPectro32__RGBLED__Animation_ae67369658f71b31b53229798bc6caa52}{void {\bfseries run} ()}\label{classESPectro32__RGBLED__Animation_ae67369658f71b31b53229798bc6caa52}
+
+\item 
+\hypertarget{classESPectro32__RGBLED__Animation_a2c8384a0665c0a7f356a05438e33b375}{void {\bfseries on\-Animation\-Completed} (W\-S2812\-Animator\-::\-Animation\-Finished\-Callback cb)}\label{classESPectro32__RGBLED__Animation_a2c8384a0665c0a7f356a05438e33b375}
+
+\item 
+\hypertarget{classESPectro32__RGBLED__Animation_abafab4b15281cea8b9127520c42ff194}{\hyperlink{classESPectro32__RGBLED}{E\-S\-Pectro32\-\_\-\-R\-G\-B\-L\-E\-D} \& {\bfseries Rgb\-Led} ()}\label{classESPectro32__RGBLED__Animation_abafab4b15281cea8b9127520c42ff194}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classESPectro32__RGBLED__Animation_a74b6ded71ed63e49f4c865258b5516ca}{W\-S2812\-Animator $\ast$ {\bfseries get\-Animator\-Ptr} ()}\label{classESPectro32__RGBLED__Animation_a74b6ded71ed63e49f4c865258b5516ca}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classESPectro32__RGBLED__Animation_af280cb124d7a2ee7fa157625e49b816c}{\hyperlink{classESPectro32__RGBLED}{E\-S\-Pectro32\-\_\-\-R\-G\-B\-L\-E\-D} \& {\bfseries rgb\-Led\-\_\-}}\label{classESPectro32__RGBLED__Animation_af280cb124d7a2ee7fa157625e49b816c}
+
+\item 
+\hypertarget{classESPectro32__RGBLED__Animation_a89e7efa0cf8ca9c3353e2049e4316d39}{Rgb\-Led\-Color\-\_\-t \& {\bfseries default\-Color\-\_\-}}\label{classESPectro32__RGBLED__Animation_a89e7efa0cf8ca9c3353e2049e4316d39}
+
+\item 
+\hypertarget{classESPectro32__RGBLED__Animation_a33676837678e6e90c3eda53ba247d2e1}{W\-S2812\-Animator $\ast$ {\bfseries animator\-\_\-} = N\-U\-L\-L}\label{classESPectro32__RGBLED__Animation_a33676837678e6e90c3eda53ba247d2e1}
+
+\item 
+\hypertarget{classESPectro32__RGBLED__Animation_a442a1b2856cd5ac5b5f6081374aaea1e}{W\-S2812\-Animator\-::\-Animation\-Finished\-Callback {\bfseries anim\-Completed\-Cb\-\_\-} = N\-U\-L\-L}\label{classESPectro32__RGBLED__Animation_a442a1b2856cd5ac5b5f6081374aaea1e}
+
+\item 
+\hypertarget{classESPectro32__RGBLED__Animation_a5d33f43d0e6c27e9bc7f58171bde970b}{boolean {\bfseries animation\-Prev\-Started\-\_\-} = false}\label{classESPectro32__RGBLED__Animation_a5d33f43d0e6c27e9bc7f58171bde970b}
+
+\item 
+\hypertarget{classESPectro32__RGBLED__Animation_ae4c68e9d7db1fd7fe3c75b7502cb1cf2}{uint16\-\_\-t {\bfseries anim\-Completed\-Count\-\_\-} = 0}\label{classESPectro32__RGBLED__Animation_ae4c68e9d7db1fd7fe3c75b7502cb1cf2}
+
+\item 
+\hypertarget{classESPectro32__RGBLED__Animation_a519bddb3df7113d2014aaed34058fd29}{uint16\-\_\-t {\bfseries anim\-Max\-Count\-\_\-} = 0}\label{classESPectro32__RGBLED__Animation_a519bddb3df7113d2014aaed34058fd29}
+
+\item 
+\hypertarget{classESPectro32__RGBLED__Animation_a749e19362a0b3b359bd6a8681fee809e}{bool {\bfseries force\-Stop\-\_\-} = false}\label{classESPectro32__RGBLED__Animation_a749e19362a0b3b359bd6a8681fee809e}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base class of Neopixel R\-G\-B L\-E\-D animation. You should provide callback for anim\-Update\-Callback. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+E\-S\-Pectro32\-\_\-\-R\-G\-B\-L\-E\-D\-\_\-\-Animation.\-h\item 
+E\-S\-Pectro32\-\_\-\-R\-G\-B\-L\-E\-D\-\_\-\-Animation.\-cpp\end{DoxyCompactItemize}

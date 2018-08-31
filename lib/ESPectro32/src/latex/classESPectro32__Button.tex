@@ -1,0 +1,99 @@
+\hypertarget{classESPectro32__Button}{\section{E\-S\-Pectro32\-\_\-\-Button Class Reference}
+\label{classESPectro32__Button}\index{E\-S\-Pectro32\-\_\-\-Button@{E\-S\-Pectro32\-\_\-\-Button}}
+}
+
+
+E\-S\-Pectro32 button.  
+
+
+
+
+{\ttfamily \#include $<$E\-S\-Pectro32\-\_\-\-Button.\-h$>$}
+
+Inheritance diagram for E\-S\-Pectro32\-\_\-\-Button\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classESPectro32__Button}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Button\-\_\-\-State} \{ \\*
+{\bfseries E\-S\-Pectro32\-Button\-Unknown} = 0, 
+{\bfseries E\-S\-Pectro32\-Button\-Pressed}, 
+{\bfseries E\-S\-Pectro32\-Button\-Released}, 
+{\bfseries E\-S\-Pectro32\-Button\-Second\-Pressed}, 
+\\*
+{\bfseries E\-S\-Pectro32\-Button\-Waiting\-For\-Long\-Pressed}, 
+{\bfseries E\-S\-Pectro32\-Button\-Long\-Pressed}
+ \}
+\item 
+\hypertarget{classESPectro32__Button_afff4b934b4520b3c42d2792c67dbbe50}{typedef std\-::function$<$ void()$>$ {\bfseries Button\-Action\-Callback}}\label{classESPectro32__Button_afff4b934b4520b3c42d2792c67dbbe50}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classESPectro32__Button_a0e823e4ff38fa5a16858d8a0267169ed}{{\bfseries E\-S\-Pectro32\-\_\-\-Button} (uint8\-\_\-t gpio, boolean active\-High=false)}\label{classESPectro32__Button_a0e823e4ff38fa5a16858d8a0267169ed}
+
+\item 
+\hypertarget{classESPectro32__Button_a7055a1c1acfa459a1c81bd0b08681159}{void \hyperlink{classESPectro32__Button_a7055a1c1acfa459a1c81bd0b08681159}{begin} ()}\label{classESPectro32__Button_a7055a1c1acfa459a1c81bd0b08681159}
+
+\begin{DoxyCompactList}\small\item\em Must be called as soon as possible to do initialization stuffs. \end{DoxyCompactList}\item 
+\hypertarget{classESPectro32__Button_a9af097046592195c0778b98ba50022eb}{void {\bfseries start} (void $\ast$task\-Data=nullptr)}\label{classESPectro32__Button_a9af097046592195c0778b98ba50022eb}
+
+\item 
+\hypertarget{classESPectro32__Button_a8706dbe3931f2e60de36a667e451ad2c}{Button\-\_\-\-State {\bfseries get\-State} ()}\label{classESPectro32__Button_a8706dbe3931f2e60de36a667e451ad2c}
+
+\item 
+\hypertarget{classESPectro32__Button_a62289ae77d95dbc54dfcadd84adb95a8}{void {\bfseries run} ()}\label{classESPectro32__Button_a62289ae77d95dbc54dfcadd84adb95a8}
+
+\item 
+\hypertarget{classESPectro32__Button_a7c07861f069f7af51a4a9e29b8bcdbdf}{void {\bfseries run\-Async} (void $\ast$data)}\label{classESPectro32__Button_a7c07861f069f7af51a4a9e29b8bcdbdf}
+
+\item 
+\hypertarget{classESPectro32__Button_a62b9b6106ef44eefd820ec79bcf410ed}{void {\bfseries on\-Button\-Down} (Button\-Action\-Callback cb)}\label{classESPectro32__Button_a62b9b6106ef44eefd820ec79bcf410ed}
+
+\item 
+\hypertarget{classESPectro32__Button_ab0d4b247a9964a4e0be84c7e1f820aaa}{void {\bfseries on\-Button\-Up} (Button\-Action\-Callback cb)}\label{classESPectro32__Button_ab0d4b247a9964a4e0be84c7e1f820aaa}
+
+\item 
+\hypertarget{classESPectro32__Button_a6c3d37c08d1ae0575417f6e9f0d7bd66}{void {\bfseries on\-Pressed} (Button\-Action\-Callback cb)}\label{classESPectro32__Button_a6c3d37c08d1ae0575417f6e9f0d7bd66}
+
+\item 
+\hypertarget{classESPectro32__Button_ad387123c630859eab0e0f85a8ede4679}{void {\bfseries on\-Long\-Pressed} (Button\-Action\-Callback cb)}\label{classESPectro32__Button_ad387123c630859eab0e0f85a8ede4679}
+
+\item 
+\hypertarget{classESPectro32__Button_aaa428fdecf890c9d2ca7ce9bd5d02b45}{void {\bfseries on\-Double\-Pressed} (Button\-Action\-Callback cb)}\label{classESPectro32__Button_aaa428fdecf890c9d2ca7ce9bd5d02b45}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+E\-S\-Pectro32 button. 
+
+This class is for working with button, especially attached button \char`\"{}\-A\char`\"{} and \char`\"{}\-B\char`\"{} on E\-S\-Pectro32. But nothing will stop you for working with external buttons.
+
+Creating object\-: 
+\begin{DoxyCode}
+\hyperlink{classESPectro32__Button}{ESPectro32\_Button} buttonA(ESPECTRO32\_BUTTON\_A\_PIN);
+\end{DoxyCode}
+
+
+Attaching event handlers\-:
+
+
+\begin{DoxyCode}
+buttonA.onButtonUp([]() \{
+    ESP\_LOGI(TAG, \textcolor{stringliteral}{"Button A up"});
+\});
+\end{DoxyCode}
+
+
+That's for handling \char`\"{}on button up\char`\"{} event. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+E\-S\-Pectro32\-\_\-\-Button.\-h\item 
+E\-S\-Pectro32\-\_\-\-Button.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,46 @@
+{
+    "description": "Library for the TSL2591 digital luminosity (light) sensors.", 
+    "repository": {
+        "url": "https://github.com/adafruit/Adafruit_TSL2591_Library", 
+        "type": "git"
+    }, 
+    "platforms": [
+        "atmelavr", 
+        "atmelsam", 
+        "espressif8266", 
+        "intel_arc32", 
+        "microchippic32", 
+        "nordicnrf51", 
+        "teensy", 
+        "timsp430"
+    ], 
+    "export": {
+        "exclude": [
+            "extras", 
+            "docs", 
+            "tests", 
+            "test", 
+            "*.doxyfile", 
+            "*.pdf"
+        ], 
+        "include": null
+    }, 
+    "authors": [
+        {
+            "maintainer": true, 
+            "name": "Adafruit", 
+            "url": null, 
+            "email": "info@adafruit.com"
+        }
+    ], 
+    "keywords": [
+        "sensors"
+    ], 
+    "id": 463, 
+    "name": "Adafruit TSL2591 Library", 
+    "frameworks": [
+        "arduino"
+    ], 
+    "version": "1.0.2", 
+    "homepage": null
+}

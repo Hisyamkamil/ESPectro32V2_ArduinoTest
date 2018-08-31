@@ -1,0 +1,174 @@
+\hypertarget{classESPectro32__Board}{\section{E\-S\-Pectro32\-\_\-\-Board Class Reference}
+\label{classESPectro32__Board}\index{E\-S\-Pectro32\-\_\-\-Board@{E\-S\-Pectro32\-\_\-\-Board}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classESPectro32__Board_ab30bdfe90355eebed94079825edb9074}{bool \hyperlink{classESPectro32__Board_ab30bdfe90355eebed94079825edb9074}{begin} ()}\label{classESPectro32__Board_ab30bdfe90355eebed94079825edb9074}
+
+\begin{DoxyCompactList}\small\item\em Must be called as soon as possible to do initialization stuffs. \end{DoxyCompactList}\item 
+\hypertarget{classESPectro32__Board_a6323282821fc82e3464c9f6d71694ec2}{\hyperlink{classESPectro32__RGBLED}{E\-S\-Pectro32\-\_\-\-R\-G\-B\-L\-E\-D} \& {\bfseries Rgb\-Led} ()}\label{classESPectro32__Board_a6323282821fc82e3464c9f6d71694ec2}
+
+\item 
+\hyperlink{classESPectro32__LED}{E\-S\-Pectro32\-\_\-\-L\-E\-D} \& \hyperlink{classESPectro32__Board_a400d22c0e4bd91c67c79dd2a3d97949b}{L\-E\-D} ()
+\begin{DoxyCompactList}\small\item\em Get L\-E\-D object. \end{DoxyCompactList}\item 
+\hypertarget{classESPectro32__Board_a200ca72df0774755f3a2f4ea102939f1}{void {\bfseries turn\-On\-L\-E\-D} ()}\label{classESPectro32__Board_a200ca72df0774755f3a2f4ea102939f1}
+
+\item 
+\hypertarget{classESPectro32__Board_aad62eaa7b136b105e89631b488cc77ae}{void {\bfseries turn\-Off\-L\-E\-D} ()}\label{classESPectro32__Board_aad62eaa7b136b105e89631b488cc77ae}
+
+\item 
+\hypertarget{classESPectro32__Board_ab592b38643de929709b44c8244aee776}{void {\bfseries blink\-L\-E\-D} (uint32\-\_\-t interval=500, uint32\-\_\-t count=U\-I\-N\-T16\-\_\-\-M\-A\-X)}\label{classESPectro32__Board_ab592b38643de929709b44c8244aee776}
+
+\item 
+\hypertarget{classESPectro32__Board_a994b4f6b2d50e5cc19346f98f4eb3bcf}{void {\bfseries fade\-L\-E\-D} (uint32\-\_\-t duration=1000, uint32\-\_\-t count=U\-I\-N\-T16\-\_\-\-M\-A\-X)}\label{classESPectro32__Board_a994b4f6b2d50e5cc19346f98f4eb3bcf}
+
+\item 
+\hypertarget{classESPectro32__Board_a43e6b437ec48bb462b21ef4afaaf291f}{void {\bfseries stop\-L\-E\-D\-Animation} ()}\label{classESPectro32__Board_a43e6b437ec48bb462b21ef4afaaf291f}
+
+\item 
+\hypertarget{classESPectro32__Board_aa1c45b12c83d1c129705221dcafaac59}{void {\bfseries toggle\-L\-E\-D} ()}\label{classESPectro32__Board_aa1c45b12c83d1c129705221dcafaac59}
+
+\item 
+\hyperlink{classESPectro32__Button}{E\-S\-Pectro32\-\_\-\-Button} \& \hyperlink{classESPectro32__Board_a96ba6663e7268020a138b06bce4c8ad4}{Button\-A} ()
+\begin{DoxyCompactList}\small\item\em Get Button \char`\"{}\-A\char`\"{} object. \end{DoxyCompactList}\item 
+\hyperlink{classESPectro32__Button}{E\-S\-Pectro32\-\_\-\-Button} \& \hyperlink{classESPectro32__Board_ace0cadf53cdc876fc28ae83c90b0e162}{Button\-B} ()
+\begin{DoxyCompactList}\small\item\em Get Button \char`\"{}\-B\char`\"{} object. \end{DoxyCompactList}\item 
+\hyperlink{classESPectro32__LedMatrix}{E\-S\-Pectro32\-\_\-\-Led\-Matrix} \& \hyperlink{classESPectro32__Board_a167e14540f5b245968654cd4414065f0}{Led\-Matrix} ()
+\begin{DoxyCompactList}\small\item\em Get Led Matrix object. \end{DoxyCompactList}\item 
+int \hyperlink{classESPectro32__Board_ab3da57228e6f7daed9564414d9d5a28c}{read\-Analog} (adc1\-\_\-channel\-\_\-t channel, adc\-\_\-bits\-\_\-width\-\_\-t bit\-Width=A\-D\-C\-\_\-\-W\-I\-D\-T\-H\-\_\-12\-Bit, adc\-\_\-atten\-\_\-t atten=A\-D\-C\-\_\-\-A\-T\-T\-E\-N\-\_\-6db)
+\begin{DoxyCompactList}\small\item\em Conveniently read analog data. \end{DoxyCompactList}\item 
+float \hyperlink{classESPectro32__Board_a6b3d0b4f8b9b328ec112f3460336274c}{read\-Analog\-Voltage} (adc1\-\_\-channel\-\_\-t channel, adc\-\_\-bits\-\_\-width\-\_\-t bit\-Width=A\-D\-C\-\_\-\-W\-I\-D\-T\-H\-\_\-12\-Bit, adc\-\_\-atten\-\_\-t atten=A\-D\-C\-\_\-\-A\-T\-T\-E\-N\-\_\-6db)
+\begin{DoxyCompactList}\small\item\em Conveniently read analog data converted to its voltage value. \end{DoxyCompactList}\item 
+\hypertarget{classESPectro32__Board_a87b5ac3e5b885dd335d07c2f9811ae28}{int {\bfseries read\-Photo\-Transistor\-Value} (adc\-\_\-bits\-\_\-width\-\_\-t bit\-Width=A\-D\-C\-\_\-\-W\-I\-D\-T\-H\-\_\-12\-Bit, adc\-\_\-atten\-\_\-t atten=A\-D\-C\-\_\-\-A\-T\-T\-E\-N\-\_\-6db)}\label{classESPectro32__Board_a87b5ac3e5b885dd335d07c2f9811ae28}
+
+\item 
+\hypertarget{classESPectro32__Board_adb7ec9962c9af79124f4b2760bd615db}{float {\bfseries read\-Photo\-Transistor\-Voltage} (adc\-\_\-bits\-\_\-width\-\_\-t bit\-Width=A\-D\-C\-\_\-\-W\-I\-D\-T\-H\-\_\-12\-Bit, adc\-\_\-atten\-\_\-t atten=A\-D\-C\-\_\-\-A\-T\-T\-E\-N\-\_\-6db)}\label{classESPectro32__Board_adb7ec9962c9af79124f4b2760bd615db}
+
+\item 
+\hypertarget{classESPectro32__Board_ae2197eeb81256b0f2c17b521cb09fb9c}{void \hyperlink{classESPectro32__Board_ae2197eeb81256b0f2c17b521cb09fb9c}{scan\-I2\-C} ()}\label{classESPectro32__Board_ae2197eeb81256b0f2c17b521cb09fb9c}
+
+\begin{DoxyCompactList}\small\item\em Scan attached I2\-C peripherals. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classESPectro32__Board_a96ba6663e7268020a138b06bce4c8ad4}{\index{E\-S\-Pectro32\-\_\-\-Board@{E\-S\-Pectro32\-\_\-\-Board}!Button\-A@{Button\-A}}
+\index{Button\-A@{Button\-A}!ESPectro32_Board@{E\-S\-Pectro32\-\_\-\-Board}}
+\subsubsection[{Button\-A}]{\setlength{\rightskip}{0pt plus 5cm}{\bf E\-S\-Pectro32\-\_\-\-Button} \& E\-S\-Pectro32\-\_\-\-Board\-::\-Button\-A (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classESPectro32__Board_a96ba6663e7268020a138b06bce4c8ad4}
+
+
+Get Button \char`\"{}\-A\char`\"{} object. 
+
+This method is for getting Button \char`\"{}\-A\char`\"{} object so that you can attach event handlers in order to detect click, double click, and long press. Button A is connected to G\-P\-I\-O 0.
+
+\begin{DoxyReturn}{Returns}
+The Button A object. 
+\end{DoxyReturn}
+\hypertarget{classESPectro32__Board_ace0cadf53cdc876fc28ae83c90b0e162}{\index{E\-S\-Pectro32\-\_\-\-Board@{E\-S\-Pectro32\-\_\-\-Board}!Button\-B@{Button\-B}}
+\index{Button\-B@{Button\-B}!ESPectro32_Board@{E\-S\-Pectro32\-\_\-\-Board}}
+\subsubsection[{Button\-B}]{\setlength{\rightskip}{0pt plus 5cm}{\bf E\-S\-Pectro32\-\_\-\-Button} \& E\-S\-Pectro32\-\_\-\-Board\-::\-Button\-B (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classESPectro32__Board_ace0cadf53cdc876fc28ae83c90b0e162}
+
+
+Get Button \char`\"{}\-B\char`\"{} object. 
+
+This method is for getting Button \char`\"{}\-B\char`\"{} object so that you can attach event handlers in order to detect click, double click, and long press. Button A is connected to G\-P\-I\-O 4.
+
+\begin{DoxyReturn}{Returns}
+The Button B object. 
+\end{DoxyReturn}
+\hypertarget{classESPectro32__Board_a400d22c0e4bd91c67c79dd2a3d97949b}{\index{E\-S\-Pectro32\-\_\-\-Board@{E\-S\-Pectro32\-\_\-\-Board}!L\-E\-D@{L\-E\-D}}
+\index{L\-E\-D@{L\-E\-D}!ESPectro32_Board@{E\-S\-Pectro32\-\_\-\-Board}}
+\subsubsection[{L\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}{\bf E\-S\-Pectro32\-\_\-\-L\-E\-D} \& E\-S\-Pectro32\-\_\-\-Board\-::\-L\-E\-D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classESPectro32__Board_a400d22c0e4bd91c67c79dd2a3d97949b}
+
+
+Get L\-E\-D object. 
+
+This method is for getting L\-E\-D object so that you can work with it, either turn it on/off, blink it, toggle it, or fade it in/out.
+
+\begin{DoxyReturn}{Returns}
+The L\-E\-D object. 
+\end{DoxyReturn}
+\hypertarget{classESPectro32__Board_a167e14540f5b245968654cd4414065f0}{\index{E\-S\-Pectro32\-\_\-\-Board@{E\-S\-Pectro32\-\_\-\-Board}!Led\-Matrix@{Led\-Matrix}}
+\index{Led\-Matrix@{Led\-Matrix}!ESPectro32_Board@{E\-S\-Pectro32\-\_\-\-Board}}
+\subsubsection[{Led\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}{\bf E\-S\-Pectro32\-\_\-\-Led\-Matrix} \& E\-S\-Pectro32\-\_\-\-Board\-::\-Led\-Matrix (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classESPectro32__Board_a167e14540f5b245968654cd4414065f0}
+
+
+Get Led Matrix object. 
+
+This method is for getting Led Matrix object so that you can start working with it. You can use it to display shapes, icons, text, or pixel-\/by-\/pixel manipulation.
+
+\begin{DoxyReturn}{Returns}
+The Led Matrix object. 
+\end{DoxyReturn}
+\hypertarget{classESPectro32__Board_ab3da57228e6f7daed9564414d9d5a28c}{\index{E\-S\-Pectro32\-\_\-\-Board@{E\-S\-Pectro32\-\_\-\-Board}!read\-Analog@{read\-Analog}}
+\index{read\-Analog@{read\-Analog}!ESPectro32_Board@{E\-S\-Pectro32\-\_\-\-Board}}
+\subsubsection[{read\-Analog}]{\setlength{\rightskip}{0pt plus 5cm}int E\-S\-Pectro32\-\_\-\-Board\-::read\-Analog (
+\begin{DoxyParamCaption}
+\item[{adc1\-\_\-channel\-\_\-t}]{channel, }
+\item[{adc\-\_\-bits\-\_\-width\-\_\-t}]{bit\-Width = {\ttfamily ADC\-\_\-WIDTH\-\_\-12Bit}, }
+\item[{adc\-\_\-atten\-\_\-t}]{atten = {\ttfamily ADC\-\_\-ATTEN\-\_\-6db}}
+\end{DoxyParamCaption}
+)}}\label{classESPectro32__Board_ab3da57228e6f7daed9564414d9d5a28c}
+
+
+Conveniently read analog data. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em channel} & A\-D\-C1 channel to read. Values can be\-: A\-D\-C1\-\_\-\-C\-H\-A\-N\-N\-E\-L\-\_\-0 -\/ A\-D\-C1\-\_\-\-C\-H\-A\-N\-N\-E\-L\-\_\-7 \\
+\hline
+\mbox{\tt in}  & {\em bit\-Width} & How wide the bit to capture. Values can be\-: A\-D\-C\-\_\-\-W\-I\-D\-T\-H\-\_\-9\-Bit (511 max), A\-D\-C\-\_\-\-W\-I\-D\-T\-H\-\_\-10\-Bit (1023 max), A\-D\-C\-\_\-\-W\-I\-D\-T\-H\-\_\-11\-Bit (2047 max), A\-D\-C\-\_\-\-W\-I\-D\-T\-H\-\_\-12\-Bit (4095 max) \\
+\hline
+\mbox{\tt in}  & {\em atten} & Attenuation level. Values can be\-: A\-D\-C\-\_\-\-A\-T\-T\-E\-N\-\_\-0db, A\-D\-C\-\_\-\-A\-T\-T\-E\-N\-\_\-2\-\_\-5db, A\-D\-C\-\_\-\-A\-T\-T\-E\-N\-\_\-6db, A\-D\-C\-\_\-\-A\-T\-T\-E\-N\-\_\-11db\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The analog reading in integer 
+\end{DoxyReturn}
+\hypertarget{classESPectro32__Board_a6b3d0b4f8b9b328ec112f3460336274c}{\index{E\-S\-Pectro32\-\_\-\-Board@{E\-S\-Pectro32\-\_\-\-Board}!read\-Analog\-Voltage@{read\-Analog\-Voltage}}
+\index{read\-Analog\-Voltage@{read\-Analog\-Voltage}!ESPectro32_Board@{E\-S\-Pectro32\-\_\-\-Board}}
+\subsubsection[{read\-Analog\-Voltage}]{\setlength{\rightskip}{0pt plus 5cm}float E\-S\-Pectro32\-\_\-\-Board\-::read\-Analog\-Voltage (
+\begin{DoxyParamCaption}
+\item[{adc1\-\_\-channel\-\_\-t}]{channel, }
+\item[{adc\-\_\-bits\-\_\-width\-\_\-t}]{bit\-Width = {\ttfamily ADC\-\_\-WIDTH\-\_\-12Bit}, }
+\item[{adc\-\_\-atten\-\_\-t}]{atten = {\ttfamily ADC\-\_\-ATTEN\-\_\-6db}}
+\end{DoxyParamCaption}
+)}}\label{classESPectro32__Board_a6b3d0b4f8b9b328ec112f3460336274c}
+
+
+Conveniently read analog data converted to its voltage value. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em channel} & A\-D\-C1 channel to read. Values can be\-: A\-D\-C1\-\_\-\-C\-H\-A\-N\-N\-E\-L\-\_\-0 -\/ A\-D\-C1\-\_\-\-C\-H\-A\-N\-N\-E\-L\-\_\-7 \\
+\hline
+\mbox{\tt in}  & {\em bit\-Width} & How wide the bit to capture. Values can be\-: A\-D\-C\-\_\-\-W\-I\-D\-T\-H\-\_\-9\-Bit (511 max), A\-D\-C\-\_\-\-W\-I\-D\-T\-H\-\_\-10\-Bit (1023 max), A\-D\-C\-\_\-\-W\-I\-D\-T\-H\-\_\-11\-Bit (2047 max), A\-D\-C\-\_\-\-W\-I\-D\-T\-H\-\_\-12\-Bit (4095 max) \\
+\hline
+\mbox{\tt in}  & {\em atten} & Attenuation level. Values can be\-: A\-D\-C\-\_\-\-A\-T\-T\-E\-N\-\_\-0db, A\-D\-C\-\_\-\-A\-T\-T\-E\-N\-\_\-2\-\_\-5db, A\-D\-C\-\_\-\-A\-T\-T\-E\-N\-\_\-6db, A\-D\-C\-\_\-\-A\-T\-T\-E\-N\-\_\-11db\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The analog reading in Volt 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+E\-S\-Pectro32\-\_\-\-Board.\-h\item 
+E\-S\-Pectro32\-\_\-\-Board.\-cpp\end{DoxyCompactItemize}
